@@ -1,0 +1,165 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* soft light background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the entire container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #d5e5f3; /* soft light container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #333333; /* dark gray text */
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  color: #0066cc; /* blue accent */
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Increase space between form fields */
+form div {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Buttons inside form */
+form button {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* green */
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  background-color: #888;
+  color: white;
+}
+
+button[type="button"]:hover {
+  background-color: #666;
+}
+
+/* Todo list styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Wrapper for title and actions */
+li .item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Title */
+li h3 {
+  margin: 0;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* Buttons (Edit/Delete) */
+li .actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+li button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+li button:first-of-type {
+  background-color: #2196F3; /* blue */
+}
+
+li button:first-of-type:hover {
+  background-color: #1976D2;
+}
+
+li .delete-btn {
+  background-color: #f44336; /* red */
+}
+
+li .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Error box */
+.error {
+  background-color: #ffe6e6;
+  color: #b71c1c;
+  padding: 15px;
+  border-left: 5px solid #f44336;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
